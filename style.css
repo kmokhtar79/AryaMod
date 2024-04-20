@@ -1,0 +1,133 @@
+/* Add CSS styles for logo display animation */
+#logo-display {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack items vertically */
+    z-index: 9999; /* Ensure the logo display is on top of other content */
+}
+
+#logo-display img {
+    width: 200px; /* Adjust logo size as needed */
+    height: auto;
+    animation: logoFadeOut 3s ease forwards; /* Apply fade-out animation */
+}
+
+@keyframes logoFadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none; /* Hide logo after animation */
+    }
+}
+
+body {
+    background-color: #212121;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+header {
+    text-align: center;
+    margin-top: 70px; /* Set margin from top to 100 pixels */
+}
+
+.description-container {
+    text-align: center;
+    padding: 20px;
+    width: 30%; /* Set the width of the description container to 30% */
+    margin: 0 auto; /* Center the description container horizontally */
+}
+
+.main-logo {
+    width: 10%;
+}
+
+.logo-description {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: inline-block; /* Ensure the anchor tags take up space */
+}
+
+nav ul li a img {
+    width: 40px; /* Set the width of all icons */
+    height: 40px; /* Set the height of all icons */
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Add bigger space after social media links */
+.social-space {
+    height: 50px; /* Adjust the height of the space as needed */
+}
+
+/* Frame with black background */
+.product-frame {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Vertically center content */
+    border-radius: 20px; /* Add rounded corners */
+}
+
+/* Container for product image and description */
+.product-container {
+    width: 40%; /* Set the width to 30% of the screen */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center the content inside the container */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Product image with rounded corners */
+.product-image img {
+    width: 200px; /* Adjust the width of the product image */
+    height: auto;
+    border-radius: 10px; /* Add rounded corners */
+}
+
+/* Product description */
+.product-description {
+    color: white;
+    text-align: left;
+    padding-left: 20px; /* Add padding to separate image and description */
+    flex-grow: 1; /* Allow description to expand and fill remaining space */
+}
+
+/* Download button style */
+.download-button a {
+    color: yellow; /* Change text color to yellow */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Change link color on hover */
+.download-button a:hover {
+    color: #FFD700; /* Change color on hover */
+}
