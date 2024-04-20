@@ -1,3 +1,10 @@
+/* Define font-face */
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('fonts/RobotoSlab-Regular.ttf') format('truetype');
+    /* Add other font formats (e.g., woff, woff2) as needed */
+}
+
 /* Add CSS styles for logo display animation */
 #logo-display {
     position: fixed;
@@ -5,7 +12,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #212121;
+    background-color: #212121; /* Set background color to black */
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
@@ -30,14 +37,14 @@
 }
 
 body {
-    background-color: #212121;
+    background-color: #212121; /* Set background color to black */
     font-family: 'Roboto Slab', serif;
     color: white;
 }
 
 header {
     text-align: center;
-    margin-top: 70px; /* Set margin from top to 100 pixels */
+    margin-top: 70px; /* Set margin from top to 70 pixels */
 }
 
 .description-container {
@@ -98,7 +105,7 @@ nav ul li a img {
 
 /* Container for product image and description */
 .product-container {
-    width: 40%; /* Set the width to 30% of the screen */
+    width: 40%; /* Set the width to 40% of the screen */
     margin: 0 auto; /* Center the container horizontally */
     text-align: center; /* Center the content inside the container */
     display: flex;
